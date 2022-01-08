@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1{
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border: red 1px solid;
+
+        }
+        .box2{
+            width: 500px;
+            height: 500px;
+            background-image: url("wd.jpg");
+            /*background-repeat: repeat-x;*/
+            background-position: center;
+        }
+    /*    字体设置变化*/
+        p{
+            /*字体*/
+            /*font-family: serif;*/
+            /* 字体风格   */
+            /*正常显示*/
+            /*font-style: normal;*/
+            /*斜体*/
+            /*font-style: oblique;*/
+            /*斜体*/
+            /*font-style: italic;*/
+            /*可以设定小型大写字母*/
+            /*font-variant: small-caps;*/
+            /*改变粗细*/
+            /*font-weight: bold;*/
+            /*font-weight: 700;*/
+            /*font-weight: 300;*/
+            /*改变字体大小*/
+            font-size: 100px;
+        }
+
+        #we{
+            /*font-style: normal;*/
+            font-variant: small-caps;
+        }
+    /* 盒子模型*/
+        .box3{
+            background-color: lightgrey;
+            width: 300px;
+            border: 25px solid green;
+            padding: 25px;
+            margin: 25px;
+        }
+
+        {
+            /*固定定位*/
+            position: fixed;
+            /*相对定位*/
+            position: relative;
+            /*绝对定位*/
+            position: absolute;
+            /*浮动*/
+            float: left;right;
+
+            /* 1. 默认排成一行
+               2. 遇到边界换行
+               3. 文字环绕
+               4. 不占用位置
+               5. 只有左右浮动
+               */
+        }
+
+    </style>
+
+
+    <!--外链式  在外部建一个.css文件  导入-->
+    <!--指示被引入的文件是一个样式表 href 路径  type类型  -->
+
+    <link rel="stylesheet" href="./css/1.css" type="text/css">
+ <!--选择器
+ 通配符 *  标签选择器   id 选择器  类选择器  子代 >   后代 空格隔开
+伪类 标签:hover
+  -->
+</head>
+<body>
+<!--css层叠样式表  用来布局美化网页-->
+<!--行内式-->
+<h1 style="color: red;font-size: 30px" id="12">我是一个h1标签</h1>
+<!--内嵌式   用的最多  写在head style里面-->
+<!--背景颜色及背景图片-->
+<div class="box1">我是div</div>
+<div class="box2" style="color: red">这是一段很长的内容，你要慢慢看，妹妹</div>
+<p>这也是一段话， 你慢慢看</p>
+<p id="we">HeLlo</p>
+<!--盒模型-->
+<div class="box3">盒模型</div>
+
+<!--浮动只能左右浮动-->
+<!--float left-->
+<!--float right-->
+<!--特点-->
+<!--z-index定位的元素具有层级关系，越往后层级越高-->
+<!--css3-->
+
+</body>
+</html>

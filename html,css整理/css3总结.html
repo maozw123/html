@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        [class=box1]
+        /*[class$=box] */
+        /*[class^=box]*/
+        /*[class*=box]*/
+        {
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+        }
+        p:nth-child(3){
+            background: red;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<!--结构伪类选择器-->
+<p>我是第一个p标签</p>
+<p>我是第二个p标签</p>
+<p>我是第三个p标签</p>
+<p>我是第四个p标签</p>
+<p>我是第五个p标签</p>
+</body>
+</html>
