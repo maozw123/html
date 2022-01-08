@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 210px;
+            border: 2px solid red;
+            /*给父类元素设置高度 这种方法 不灵活 不推荐使用*/
+            /*height: 500px;*/
+        }
+    .first{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        background-color: blue;
+        float: left;
+    }
+        /*第二种 方法  添加空元素 给空元素 设置 clear both属性   不推荐使用 */
+        /*.box2{*/
+        /*    clear: both;*/
+        /*}*/
+
+        /* 第三种方法  伪类选择器 增加clear both 属性   */
+        div:after{
+           content: ""; /*值设置成none*/
+
+            clear: both;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="first">1</div>
+    <div class="first">2</div>
+    <div class="first">3</div>
+    <div class="first">4</div>
+    <div class="first">5</div>
+    <div class="first">6</div>
+    <div class="first">7</div>
+    <div class="first">8</div>
+    <div class="first">9</div>
+    <!--    <div class="box2"></div>-->
+
+</div>
+</body>
+</html>

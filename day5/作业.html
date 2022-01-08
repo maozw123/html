@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--**作业**-->
+
+<!--    1. 查找数组中执行元素的位置，存在返回下标，不存在返回-1-->
+
+<p  id="bo"></p>
+<p id="sum"></p>
+<script>
+    var ary=[1,2,'34','ab',45,'dd','ab'];
+    var src='ab';
+    for (var key in ary){
+        console.log(ary[key]);
+        if (src==ary[key]) {
+            document.getElementById('bo').innerHTML=key;
+            break
+        }else{
+            document.getElementById('bo').innerHTML=-1
+        }
+}
+    <!--    2. 计算给定数组 arr 中所有元素的总和-->
+var ary1=[2,1,3,5,4,6,8,7,9,10],sum=0;
+    for (var a in ary1){
+        sum+=ary1[a]
+    }
+    document.getElementById('sum').innerHTML=sum
+</script>
+
+
+</body>
+</html>

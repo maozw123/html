@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>this关键字</title>
+</head>
+<body>
+
+<p id='pid'></p>
+<!--this 指向触发事件的元素-->
+<button onclick="this.style.color='red'">点我变红</button>
+
+<script>
+    //  具体指向哪里
+    //  1. 单独使用 this 执行window
+    // var x = this;
+    // // console.log(x);
+    // document.getElementById("pid").innerHTML = x;
+    // 2. 在函数中使用this
+    //   执行window
+    // function func() {
+    //     return this;
+    // }
+    // document.getElementById("pid").innerHTML = func();
+    // 3. 在类方法中使用this
+    // 指向所属对象
+    //  var person = {
+    //     name:"zhangsan",
+    //     func:function () {
+    //         return this.name;
+    //     }
+    // }
+    // document.getElementById("pid").innerHTML = person.func();
+
+    // 4. 在构造函数中使用
+    // this 执行实例
+    // function person(name) {
+    //     this.name = name;
+    //     console.log(this.name);
+    // }
+    // p1 = new person('张三');
+    // p2 = new person("李四");
+    // 5. call apply 方法   改变了this的指向
+
+    var person = {
+        name:'zhangsan',
+        fullname:function () {
+            return this.name
+        }
+    }
+    var stu = {
+        name:'我是stu'
+    }
+    var x = person.fullname.apply(stu);
+    // document.getElementById("pid").innerHTML = x;
+    //
+
+
+</script>
+
+</body>
+</html>

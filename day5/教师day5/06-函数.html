@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数</title>
+</head>
+<body>
+
+<script>
+    // 关键字   函数名
+    // function func(参数) {
+    //     //方法体
+    //
+    //     return 值
+    // }
+    // //调用函数
+    // func()
+    //
+    // 1.如果没有传参  函数依然能够被调用
+    // 2. 没有传参   参数默认为 undefined
+    // 3. 没有返回值   默认接受到的是 undefined
+    // function myadd(a,b) {
+    //     // return a +b
+    //     console.log(a);
+    //     console.log(b)
+    //     return a +b
+    // }
+    //
+    // var res = myadd(1);
+    // console.log(res)
+
+    function myadd() {
+
+        // arguments
+        // console.log(arguments);
+        var i = 0;
+        var sum = 0;
+
+        for (i;i<arguments.length;i++){
+            sum += arguments[i]
+        }
+
+        return sum
+
+    }
+
+    var res = myadd(1,2)
+    console.log(res);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+        function mySort(arr) {
+            var len = arr.length;
+            for (var i = 0; i < len-1; i++) {
+                for (var j = 0; j < len - 1 - i; j++) {
+                    if (arr[j] > arr[j + 1]) {
+                        var temp = arr[j];
+                        arr[j] = arr[j+1];
+                        arr[j+1] = temp;
+                    }
+                }
+            }
+        return arr;
+    }
+
+    //举个数组
+    myArr = [20,18,27,19,35];
+    //使用函数
+    var result = mySort(myArr)
+    console.log(result)
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组操作方法</title>
+</head>
+<body>
+
+<script>
+
+    // var arr = [1,2,3,4,5];
+    /*
+    * 1. push()   数组后面添加元素
+    *    返回值是一个改变之后的数组长度
+    *    原数组 受影响
+    * */
+    //  append   extend
+    // var res = arr.push(6,32,3,5,6,7);
+    // console.log(res);
+
+    /*
+    * 2.unshift  向数组前面添加元素
+    *   返回值 改变之后数组的长度
+    *    原数组 被改变
+    *
+    * */
+
+    // var res = arr.unshift(1,2,3);
+    // console.log(res)
+
+
+    /*
+    * pop  弹出
+    *   返回是一个弹出的元素
+    *    如果超过元素  返回值为 undefined
+    *
+    * */
+
+    // var res = arr.pop();
+    // res=arr.pop()
+    // console.log(res)
+
+    /*
+    *     shift   是将数组前面的元素弹出
+    *      返回值 弹出的元素
+    *
+    * */
+
+    // var res = arr.shift()
+    // console.log(res);
+
+    /*
+    * splice 作用  删除指定数组项
+    *     [1,2,3,4,5]
+    *    一个参数  从下标开始删除到末尾   删除下标包含参数  splice(1)   [1]   [2,3,4,5]
+    *    两个参数(m,n)  从下标m开始  包含m  删除n个      splice(1,3)  [1,5]   [2,3,4]
+    *    三个参数(m,n,x)  从 m开始删除n个  然后删除项使用x 替换   splice(1,3,5,6,7)   [1,5,6,7,5]   [2,3,4]
+    *    返回值  是一个删除的元素
+    * */
+
+    // var res = arr.splice(1,3,10,11,12,13,18);
+    // console.log(res);
+    //
+    //
+    // var x;
+    // for (x in arr){
+    //     console.log(x,arr[x]);
+    // }
+
+
+    var arr = [1,2,3,4,5];
+    /*
+    * slice()  复制数组
+    *   没有参数的时候 全部复制    [1,2,3,4,5]
+    *    返回值是一个数组   [1,2,3,4,5]
+    *   一个参数m   从下标m 开始复制   slice(2)  [3,4,5]
+    *   两个参数  m,n  是从m开始复制，到n（下标）  不包括n  slice(2,4)     [3,4]
+    *
+    * */
+    // var res = arr.slice(1,2);
+    // console.log(res);
+
+    /*
+    *  concat(1,2,3,4,5)   拼接数组，返回新的数组，参数为拼接元素
+    *
+    * */
+    // var res = arr.concat(1,2,3);
+    // console.log(res);      1,2,3,4,5,1,2,3
+    // console.log(arr);
+
+    /*
+    * join 拼接字符串   1,2,3,4,5     join('')     12345  join('-')   1-2-3-4-5
+    *  参数  为拼接字符串中添加的元素
+    *  返回值是一个 sting数据
+    *  原数组不变
+    *
+    * */
+    // var res = arr.join('');
+    // console.log(res);
+    // console.log(typeof res);
+    // console.log(arr)
+
+    /*
+    * reverse  倒序
+    *  返回值为 是一个倒序的数组   5.4.3.2.1
+    *  原数组受影响  1.2.3.4.5
+    * 不需要参数
+    * */
+    // var res = arr.reverse()
+    // console.log(res);
+    // console.log(arr);
+
+    /*
+    * sort()
+    *
+    *   默认使用按照字母排序
+    *   返回值是一个 排序好的数组
+    *   原数组受影响
+    *   [1,3,40,5,73,6]    1,3,5,6,40,73
+    *   ['1','3','40','5','73','6','72']   1,3,5,6,40,73       1,3,40,5,6,73
+    *
+    *   参数 是一个比较函数，可以选定排序的顺序
+    *    正数
+    *    负数
+    *    0   不改变顺序
+    * */
+
+    // arr = [1,40,5,73,6,3];
+    // arr = ['a','d','r','z','y']
+    // var res = arr.sort();
+    // console.log(res);
+    // console.log(arr);
+    //  var res = arr.sort(function (a,b) {return a - b})
+    // var res = arr.sort(function (a,b) {return a.charCodeAt()-b.charCodeAt()})
+    // var res = arr.sort(function (a,b) {return a > b})    不使用
+    // console.log(res);
+    // console.log(arr);
+
+    // var res = arr.sort(function (a,b) {
+    //     return a.localeCompare(b);
+    //
+    // })
+    //
+    // console.log(res)
+    //
+    // console.log('a'-'b')
+    // console.log('a'<'b')    true  1   false   0
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
