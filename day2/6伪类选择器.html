@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            background: red;
+            height: 200px;
+            width: 200px;
+        }
+        .box:hover{
+            background: chartreuse;
+            height: 200px;
+            width: 200px;
+        }
+        .box:before{
+            content:'Hello';
+        }
+        .box:after{
+            content: "World";
+        }
+    </style>
+</head>
+<body>
+<div align="center" class="box">
+    <p>这是一个p标签</p>
+</div>
+</body>
+</html>

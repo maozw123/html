@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>其他事件操作</title>
+    <script src="./js/jquery.min.js"></script>
+</head>
+<body>
+<button>one方法</button>
+<button>off方法</button>
+<button>trigger方法</button>
+
+<script>
+    // 其他事件操作
+    // one
+    // off
+    // trigger
+    // one()  绑定事件  只绑一次   一次性
+    $("button:eq(0)").one("click",function () {
+        alert('我是one方法');
+    })
+    // off 关闭某一个事件
+    $("button:eq(1)").click(function () {
+        // 调用off 关闭某一个事件
+        $("button:eq(0)").off();
+        // $("button:eq(0)").off("mouseover",function () {
+        //     alert('我是off方法');
+        // });
+
+    })
+
+    // trigger 自动执行某个事件
+    $("button:eq(2)").click(function () {
+        $("button:eq(0)").trigger("click");
+    })
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

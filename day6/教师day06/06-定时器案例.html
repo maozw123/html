@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器案例</title>
+</head>
+<body>
+<span id='sid'>10</span>s
+<button onclick="start()">开始</button>
+<button onclick="end()">结束</button>
+<script>
+    var i = 9;
+    var t = 0;
+
+    function start() {
+        // 定时器
+        t = setInterval(function () {
+            document.getElementById("sid").innerHTML = i;
+            i--;
+            if (i < 0) {
+                clearInterval(t);
+            }
+
+        }, 1000)
+    }
+
+    function end() {
+        // 清除定时器
+        clearInterval(t);
+    }
+
+</script>
+
+
+</body>
+</html>

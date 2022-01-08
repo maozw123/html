@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素属性</title>
+</head>
+<body>
+
+<h1 id="hid">我是h1</h1>
+
+
+<script>
+    // set
+    //  get
+    //  更换文本内容
+    var res = document.getElementById("hid").innerHTML = "我是新的h1";
+
+    // 获取元素属性
+    var hid = document.getElementById("hid");
+    var id_value = hid.getAttribute("id");
+    console.log(id_value);
+
+    // 设置属性
+    // 新增属性
+    // 修改属性
+    hid.setAttribute("class","myclass");
+    hid.setAttribute("id","newid")
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

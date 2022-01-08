@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象属性</title>
+</head>
+<body>
+<form action="url" method="post">
+    姓名: <input type="text" name="username" value="">
+    <br>
+    密码: <input type="password" name="password" value="">
+    <br>
+    <input type="button" value="提交" onclick="myfunc()">
+</form>
+
+<script>
+    function myfunc() {
+        // var username = document.getElementsByName("username");
+        // console.log(username);
+        // var value = username[0].value;
+        // console.log(value);
+
+        var myinput = document.getElementsByTagName("input");
+        console.log(myinput);
+        //  用户名获取到
+        var username = myinput[0].value;
+        console.log("username",username);
+        // 密码获取到
+        var password = myinput[1].value;
+        console.log("password",password);
+
+        //  给 password 加一个 id属性
+        var passinput = myinput[1];
+        passinput.id = "passid"
+
+
+        // 校验 用户名 密码  邮箱 路由
+        //  通过  数据发到后端进行处理
+
+
+
+    }
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

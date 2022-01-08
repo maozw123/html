@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>输出</title>
+</head>
+<body>
+
+<button onclick="myfunc()">点我</button>
+
+<script>
+
+    function myfunc() {
+
+        //  警示框
+        alert('我是一个弹框');
+        // 显示一个对话框，有确认和取消点击按钮
+        //  参数是一个提示信息
+        //  返回值是一个 boolean类型  true 或者 flase
+        // var res = confirm("你是学习的python语言吗");
+        // console.log(res);
+        // if (res == true){
+        //     console.log('你点了确认');
+        // }else{
+        //     console.log("你点了取消");
+        // }
+        // 提示框  然后获取用户输入信息
+        // 参数  第一个是 提示语言  第二个是默认文本
+        // 返回值 string  填写的信息 或者是默认的文本内容
+        //        null 没有填写内容
+        var res = prompt('hello','world');
+        console.log(res);
+
+    }
+
+</script>
+
+</body>
+</html>

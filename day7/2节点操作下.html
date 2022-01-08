@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="demo1">
+    <li>python</li>
+    <li>java</li>
+</ul>
+<ul id="demo2">
+    <li>php</li>
+    <li>.net</li>
+    <ol>
+        <ol>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </ol>
+    </ol>
+
+</ul>
+<button onclick="mybefore()">点我添加节点</button>
+<button onclick="mydelete()">点我删除节点</button>
+<button onclick="myclone()">点我克隆节点</button>
+<script>
+    //insertBefore   在指定的节点面前添加节点
+    function mybefore() {
+        var demo1=document.getElementById('demo1');
+
+        var linode=demo1.firstElementChild;//获取第一个元素节点
+        var demo2node=document.getElementById('demo2');
+        //在某个节点面前插入指定的节点
+        //参数  新的元素  插入位置元素
+        // demo1.insertBefore(demo2node.firstElementChild,linode);
+        demo1.insertBefore(demo2node.lastElementChild,demo1.lastElementChild)
+    }
+    function mydelete() {
+        var demo2=document.getElementById('demo2');
+        demo2.removeChild(demo2.firstElementChild);
+    }
+    function myclone() {
+    var demo2=document.getElementById('demo2');
+        //  deep  deepcopy
+        //  boolean  true ---> deep  递归克隆
+        // var res=demo2.cloneNode();
+        //默认值是false  只克隆当前元素  true 把元素的子孙都克隆
+        var res=demo2.cloneNode('ture');
+        console.log(res);
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器</title>
+</head>
+<body>
+
+<!--
+设置定时器  当次定时器   多次定时器
+消除定时器  消除单次定时器  消除多次定时器
+-->
+<script>
+
+    //  setTimeout  单次定时器
+    //  参数  函数   时间间隔
+    //  变量接受返回值  数字 对这个定时器的描述  标记
+    // var t = setTimeout(function () {
+    //     console.log("我是单次定时器")
+    // },3000);
+    //
+    //
+    // console.log("我是返回值",t);
+    // // 消除单次定时器
+    // clearTimeout(t);
+
+    //  多次定时器
+    var t = setInterval(function () {
+        console.log('我是多次定时器')
+    },3000);
+
+    console.log("我是返回值",t);
+    //  消除多次定时器
+    // clearInterval(t)
+    //  多次定时器 执行n之后被清除
+
+    var res = setTimeout(function () {
+        clearInterval(t);
+    },6010);
+
+
+
+
+</script>
+
+
+</body>
+</html>

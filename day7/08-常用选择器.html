@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常用选择器</title>
+    <script src = './js/jquery.min.js'></script>
+
+</head>
+<body>
+
+<!--选择器  查找或者 查询标签元素的一种方式-->
+
+<h1>静夜思</h1>
+<ul>
+    <li id="li1">窗前明月光</li>
+    <li class='li2'>疑似地上霜</li>
+    <li class="li2">举头望明月</li>
+    <li>低头思故乡</li>
+</ul>
+
+<b>作者：李白</b>
+
+
+<script>
+    /*
+    * 常用选择器
+    * 1. id选择器
+    * 2. class 选择器
+    * 3. 标签选择器
+    * 4. 并列选择器
+    * */
+
+    $(function () {
+        // id选择器 选择符  #
+        // $("#li1").css('color','red');
+        // // 类选择器  选择符  .
+        // $(".li2").css("font-size",'20px');
+        // // 标签选择器  选择符  标签
+        // $("b").css('color','blue');
+        //
+        // 并列选择器
+        $("#li1,b,.li2,h1").css('color','red')
+    })
+
+
+
+</script>
+
+
+</body>
+</html>

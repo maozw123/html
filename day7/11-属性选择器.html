@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src = './js/jquery.min.js'></script>
+</head>
+<body>
+<ul>
+    <li dd="xx">1</li>
+    <li dd ='yy'>2</li>
+    <li>3</li>
+    <li dd = 'sdgfhkjxxxxxxxjkjkljk'>4</li>
+    <li dd='yfdsfdsfdsy'>5</li>
+
+
+</ul>
+<script>
+    /*
+    *属性选择器
+    *   通过标签的属性寻找 查找标签
+    *
+    * */
+
+    $(function () {
+        //  通过判断标签中是否有dd 这个属性
+        // $("li[dd]").css('color','red');
+        // 判断标签中某个属性为某个值的时候
+        // $("li[dd='xx']").css('color','red');
+        // $("li[dd ='yy']").css('color','blue');
+        //  ^=  属性是以某个字符串开头的
+        // $("li[dd ^='y']").css('color','blue');
+        //  $=属性是以某个字符串结尾的
+        // $("li[dd $='yy']").css('color','blue');
+        // 包含某个字符串
+        $("li[dd *= 'xx']").css('color','yellow');
+
+    })
+
+
+
+
+
+</script>
+
+</body>
+</html>

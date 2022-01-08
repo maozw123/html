@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--onclick 点击事件-->
+<button onclick="myfunc()">点击事件</button>
+<!--  ondblclick 双击事件 -->
+<button ondblclick="myfunc()">双击事件</button>
+<!-- 右击事件-->
+<button oncontextmenu="myfunc()">右击事件</button>
+<!-- 增加两个事件 按下事件   抬起事件  变色 -->
+<button id='buid' onmousedown="mymousedown()" onmouseup="mymouseup()">我是一个button</button>
+
+<button id='buid1' onmouseover="mymouseover()" onmouseleave="mymouseleave()">我是一个button</button>
+
+<script>
+    function myfunc() {
+        alert('我被点了')
+    }
+    function mymousedown(){
+        var mybutton = document.getElementById("buid");
+        // 节点.style.color
+        mybutton.style.color = 'red';
+
+    }
+
+    function mymouseup() {
+        var mybutton = document.getElementById("buid");
+        // 节点.style.color
+        mybutton.style.color = 'blue';
+
+    }
+
+
+    function mymouseover(){
+        var mybutton = document.getElementById("buid1");
+        // 节点.style.color
+        mybutton.style.color = 'red';
+
+    }
+
+    function mymouseleave() {
+        var mybutton = document.getElementById("buid1");
+        // 节点.style.color
+        mybutton.style.color = 'blue';
+
+    }
+
+</script>
+</body>
+</html>

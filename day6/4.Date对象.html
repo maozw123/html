@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="pid"></p>
+<script>
+    // 获取系统当前时间
+    // document.getElementById('pid').innerHTML=new Date();
+    //将时间格式的字符串转化成时间对象
+    // document.getElementById('pid').innerHTML=new Date('1994-08')
+    var date=new Date();
+    document.getElementById('pid').innerHTML=date.getFullYear();
+    document.getElementById('pid').innerHTML=date.getMonth();
+</script>
+</body>
+</html>

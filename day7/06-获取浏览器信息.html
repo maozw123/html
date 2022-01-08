@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button onclick="myfunc()">点我</button>
+<script>
+
+    function myfunc() {
+
+        // navigator 通过这个对象能够查看到浏览器的一些信息
+
+        //  浏览器代码名
+        var res = navigator.appCodeName;
+        console.log(res)
+
+
+        var res = navigator.userAgent;
+        console.log(res);
+        //  比如 页面 安卓下载的链接 可以放在 win  或者是  手机上面  微信上面
+        //  根据不同的 浏览器信息  提供不同的下载地址
+        var res = navigator.appVersion;
+        console.log(res);
+
+        //  浏览器的名字
+        var res = navigator.appName;
+        console.log(res)
+
+        var res = navigator.platform;
+        console.log(res)
+
+
+    }
+
+</script>
+
+
+
+</body>
+</html>

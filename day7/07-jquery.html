@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--引用jquery-->
+    <!--1. 将库下载到本地-->
+    <script src='./js/jquery.min.js'></script>
+    <!--2. 加载网络上的一些库  -->
+    <!--<script src="http://地址"></script>-->
+</head>
+<body>
+<!--
+jQuery 是一个js库  能够简化js代码
+       封装了js中的大部分功能
+       写的少  做的多
+-->
+
+<div id="box">
+    1234
+</div>
+<script>
+    // 语法
+    // $(选择器).行为  hide
+    //                css
+    //
+    // 文档就绪事件 文档加载完成之后执行 DOM加载完成之后执行
+    //  jquery 入口函数
+   // $(document).ready(function () {
+   //      // var res = document.getElementById("box");
+   //      // res.style.color = 'red';
+   //      //  id选择器  .css 行为 设置样式
+   //      $('#box').css('color','red')
+   //  })
+    // 简写方式
+    $(function () {
+        $('#box').css('color','blue');
+    })
+
+</script>
+
+</body>
+</html>

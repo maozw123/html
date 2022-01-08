@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件</title>
+    <script src="./js/jquery.min.js"></script>
+</head>
+<body>
+
+<!--
+事件 鼠标点击事件  移入 移出
+     键盘
+
+     页面对访问者的不同响应
+-->
+
+<!--<button>直接绑定</button>-->
+<!--<button>bind绑定事件</button>-->
+<!--<button>on方法绑定事件</button>-->
+<!--<script>
+    /*
+    * 绑定事件的方式
+    *
+    *
+    * */
+
+    // $().行为
+    //  直接绑定
+    // $('button:eq(0)').click(function () {
+    //     alert('我被点击了');
+    // })
+    // // bind 绑定事件方法  同时绑定多个事件
+    // // 参数 第一个参数  绑定的事件 可以多个
+    // //      第二个参数  事件被触发的时候要执行的方法
+    // $('button:eq(1)').bind('click mouseover',function () {
+    //     alert('我是bind绑定方式');
+    // })
+    // // on
+    // // 参数  第一个参数 绑定的事件 可以是多个事件
+    // //       第二个参数  执行的方法
+    // $('button:eq(2)').on('click mouseover',function () {
+    //     alert('我是on方法绑定的事件');
+    // })
+    //
+
+</script>-->
+
+<div>
+    <button>点我</button>
+    <button>点我2</button>
+</div>
+<div>
+    <button>点我</button>
+    <button>点我2</button>
+</div>
+
+<script>
+    // click
+
+    $("div:eq(1) button:first").click(function () {
+        alert('hello');
+    })
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

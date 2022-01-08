@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+    //   test()  正则的方法 用来搜索某个字符串中是否含有指定字符，有 返回true  没有返回flase
+    //  match()  字符串方法 用来找到一个或者多个正则匹配的结果
+    //  g  全局匹配
+    // i   忽略大小写
+    // var str = "hello HELLO";
+    // var pattern = /l/gi;
+
+    // var str = "hello HELLO";
+    // var pattern = /hello/gi;
+
+    // var str = "hello23213fjdkslf_==+%^&*&$##$^*&*";
+    // var patt = /\D/g;  //  \d 匹配的是数字0-9   \D  除了数字
+    // var patt = /\W/g;   //   \w  数字  字母 下划线   \W 除了\w的内容
+    // var patt = /^hello/;
+    // var str = "hello"
+    // var patt = /^hello$/;   //  精准匹配
+
+    // var str = "hello23232";
+    // var patt = /\d?/;   //  ? 要么出现1次 要么不出现  贪婪匹配  非贪婪匹配
+    // var patt = /\d{5,}/;   //   {1}  匹配一次   {n,m}  匹配n到m次    {n,}  匹配至少n次
+
+    // var patt = /(hello|world)/;
+    // var patt = /[a-zA-Z0-9]/g;
+    // var patt = /[hyz]/;
+
+    //  手机号  11位 1开头 纯数字 5 3 8 7 4
+    // var str = '18435808455';
+    // var patt = /^1[53874]\d{9}$/;
+    // 地域    0351 0101  0353
+    // var str = '';
+    // var patt = /^1(0351|0101|0353){1}\d{6}$/;
+    // 邮箱
+    // 34554353@qq.com   fhdskfhkjds y2478 _   \w @ qq  126 sina 163  .com   可以有 .cn
+    // 35525fjsfj@126.com
+    // str_wjp@163.com
+    // sfdsffdsf@139.com.cn
+    // dfsjlfdsf@sina.com
+    var str = '3fhjkdskfds@126.com.cn';
+    var patt = /^\w{1,}@(qq|126|163|sina)\.com(\.cn)?$/g;
+
+    document.getElementById("demo1").innerHTML = patt.test(str);
+    document.getElementById("demo2").innerHTML = str.match(patt);
+
+</script>
+
+
+
+
+
+</body>
+</html>

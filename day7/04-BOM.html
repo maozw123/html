@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM</title>
+</head>
+<body>
+
+<!--
+DOM 针对文档
+BOM 针对浏览器进行操作  浏览器对象模型
+    针对浏览器的方法    open  close
+-->
+
+<button id = 'buid' onclick="myopen()">open方法</button>
+<button onclick="myclose()">close方法</button>
+<script>
+    function myopen() {
+        // 打开百度
+        // open("http://www.baidu.com");
+        window.open("http://www.baidu.com");
+        // 使用dom 获取节点
+        var res = document.getElementById("buid");
+        console.log(res);
+        // 使用bom document 也是属于window对象属性之一
+        var res = window.document.getElementById("buid");
+        console.log(res);
+
+    }
+
+    function myclose() {
+        // 关闭当前窗口
+        window.close();
+
+    }
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

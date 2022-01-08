@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span id="sid">10</span>s
+<button onclick="start()">开始</button>
+<button onclick="end()">结束</button>
+<script>
+    var t=0;i=9;
+    function start() {
+        t=setInterval(function () {
+            document.getElementById('sid').innerHTML=i;
+            i--;
+            if (i<0){
+                clearInterval(t)
+            }
+        },1000)
+    }
+    function end() {
+        clearInterval(t)
+    }
+</script>
+
+
+
+</body>
+</html>
